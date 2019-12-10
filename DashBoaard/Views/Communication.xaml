@@ -13,6 +13,8 @@
     <ContentPage.ToolbarItems>
 
         <ToolbarItem Text="Call" IconImageSource="outline_call_black_24.png" />
+        <ToolbarItem Text="SMS" IconImageSource="outline_textsms_black_24" />
+        <ToolbarItem Text="Save" IconImageSource="outline_save_black_24" />
 
     </ContentPage.ToolbarItems>
 
