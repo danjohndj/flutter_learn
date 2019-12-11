@@ -6,7 +6,17 @@
              mc:Ignorable="d"
              x:Class="DashBoaard.Views.Communication">
     <ContentPage.Content>
-        
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+            <Label Grid.Row="0" Grid.Column="0" Text="Phone Number"/>
+            <Entry Grid.Row="1" Grid.Column="0" x:Name="txtPhone" />
+        </Grid>
 
     </ContentPage.Content>
 
