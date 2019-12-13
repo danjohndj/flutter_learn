@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using Xamarin.Essentials;
 
 namespace DashBoaard.Views
 {
@@ -15,6 +16,18 @@ namespace DashBoaard.Views
         public Communication()
         {
             InitializeComponent();
+        }
+
+        public void MakeCall()
+        {
+            if (txtPhone.Text.Length > 0)
+            {
+                PhoneDialer.Open(txtPhone.Text);
+            }
+            else
+            {
+                // show error
+            }
         }
     }
 }
