@@ -27,7 +27,24 @@ namespace DashBoaard.Views
             else
             {
                 // show error
+                DisplayAlert("Error", "Phone Number must be entered", "OK");
             }
         }
+
+        private void ToolbarItem_Clicked(object sender, EventArgs e)
+        {
+            MakeCall();
+        }
+
+        private void tbSMS_Clicked(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tbSave_Clicked(object sender, EventArgs e)
+        {
+
+        }
+
     }
 }
