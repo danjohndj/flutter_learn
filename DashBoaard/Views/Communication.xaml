@@ -16,7 +16,9 @@
                 <ColumnDefinition Width="Auto"/>
             </Grid.ColumnDefinitions>
             <Label Grid.Row="0" Grid.Column="0" Text="Phone Number" FontSize="Large" />
-            <Entry Grid.Row="1" Grid.Column="0" x:Name="txtPhone" FontSize=" />
+            <Entry Grid.Row="1" Grid.Column="0" x:Name="txtPhone" FontSize="Large" />
+            <Label Grid.Row="2" Grid.Column="0" Text="Message" FontSize="Large" />
+            <Entry Grid.Row="3" Grid.Column="0" x:Name="txtMsg" FontSize="Large" />
         </Grid>
 
     </ContentPage.Content>

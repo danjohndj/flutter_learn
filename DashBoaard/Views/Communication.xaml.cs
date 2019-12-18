@@ -13,9 +13,18 @@ namespace DashBoaard.Views
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class Communication : ContentPage
     {
+        private const string PrefPhone = "PrefPhone";
+        private const string PrefMsg = "PrefMsg";
+
         public Communication()
         {
             InitializeComponent();
+        }
+
+        private void Init()
+        {
+            txtPhone.Text = Preferences.Get(PrefPhone);
+            
         }
 
         public void MakeCall()
