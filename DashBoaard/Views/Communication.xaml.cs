@@ -19,14 +19,21 @@ namespace DashBoaard.Views
         public Communication()
         {
             InitializeComponent();
+            Init();
         }
 
         private void Init()
         {
-            txtPhone.Text = Preferences.Get(PrefPhone);
+            txtPhone.Text = Preferences.Get(PrefPhone,"");
+            txtMsg.Text = Preferences.Get(PrefMsg, "");
             
         }
 
+        private void Save()
+        {
+            Preferences.Set(PrefPhone, txtPhone.Text);
+            Preferences.Set(PrefMsg, txtMsg.Text);
+        }
         public void MakeCall()
         {
             if (txtPhone.Text.Length > 0)
@@ -52,7 +59,7 @@ namespace DashBoaard.Views
 
         private void tbSave_Clicked(object sender, EventArgs e)
         {
-
+            Save();
         }
 
     }
