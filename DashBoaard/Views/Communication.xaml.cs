@@ -29,6 +29,23 @@ namespace DashBoaard.Views
             
         }
 
+        private async Task SendSMS()
+        {
+            try
+            {
+                var msg = new SmsMessage(txtMsg.Text, new[] { txtPhone.Text });
+                await Sms.ComposeAsync(msg);
+            }
+
+            catch (FeatureNotSupportedException ex)
+            {
+                DisplayAlert("Sorry","SMS not supported on this device);
+            }
+            catch (Exception ex)
+            {
+                DisplayAlert("Error", ex.ToString());
+            }
+        }
         private void Save()
         {
             Preferences.Set(PrefPhone, txtPhone.Text);
@@ -54,7 +71,7 @@ namespace DashBoaard.Views
 
         private void tbSMS_Clicked(object sender, EventArgs e)
         {
-
+            SendSMS();
         }
 
         private void tbSave_Clicked(object sender, EventArgs e)
