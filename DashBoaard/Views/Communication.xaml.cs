@@ -39,7 +39,7 @@ namespace DashBoaard.Views
 
             catch (FeatureNotSupportedException ex)
             {
-                DisplayAlert("Sorry","SMS not supported on this device);
+                DisplayAlert(,"SMS not supported on this device");
             }
             catch (Exception ex)
             {
