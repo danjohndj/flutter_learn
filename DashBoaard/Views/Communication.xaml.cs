@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using Xamarin.Essentials;
@@ -15,7 +14,7 @@ namespace DashBoaard.Views
     {
         private const string PrefPhone = "PrefPhone";
         private const string PrefMsg = "PrefMsg";
-
+        
         public Communication()
         {
             InitializeComponent();
@@ -39,11 +38,11 @@ namespace DashBoaard.Views
 
             catch (FeatureNotSupportedException ex)
             {
-                DisplayAlert(,"SMS not supported on this device");
+                await DisplayAlert(Lib.Error,"SMS not supported on this device",Lib.OK);
             }
             catch (Exception ex)
             {
-                DisplayAlert("Error", ex.ToString());
+                await DisplayAlert(Lib.Error, ex.ToString(),Lib.OK);
             }
         }
         private void Save()
@@ -60,7 +59,7 @@ namespace DashBoaard.Views
             else
             {
                 // show error
-                DisplayAlert("Error", "Phone Number must be entered", "OK");
+                DisplayAlert(Lib.Error, "Phone Number must be entered", Lib.OK);
             }
         }
 

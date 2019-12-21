@@ -11,14 +11,16 @@
             <Grid.RowDefinitions>
                 <RowDefinition Height="Auto"/>
                 <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
             </Grid.RowDefinitions>
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="Auto"/>
             </Grid.ColumnDefinitions>
             <Label Grid.Row="0" Grid.Column="0" Text="Phone Number" FontSize="Large" />
-            <Entry Grid.Row="1" Grid.Column="0" x:Name="txtPhone" FontSize="Large" />
-            <Label Grid.Row="2" Grid.Column="0" Text="Message" FontSize="Large" />
-            <Entry Grid.Row="3" Grid.Column="0" x:Name="txtMsg" FontSize="Large" />
+            <Entry Grid.Row="1" Grid.Column="0" x:Name="txtPhone" FontSize="Large" Keyboard="Telephone" />
+            <Label Grid.Row="2" Grid.Column="0" Text="Message" FontSize="Large"  />
+            <Entry Grid.Row="3" Grid.Column="0" x:Name="txtMsg" FontSize="Large" Keyboard="Chat" />
         </Grid>
 
     </ContentPage.Content>
