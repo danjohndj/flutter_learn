@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="DashBoaard.Views.Network">
+    <ContentPage.Content>
+        <Grid >
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+
+            <Label Text="Wifi" Grid.Row="0" FontSize="Large" />
+            <Entry x:Name="txtWifi" Grid.Row="1" FontSize="Large" />
+            <Switch x:Name="switchWifi" Grid.Row="2" />
+            <Label Text="Location" Grid.Row="3" FontSize="Large" />
+            <Switch x:Name="switchLocation" Grid.Row="4" />
+
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
