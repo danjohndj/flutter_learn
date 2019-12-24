@@ -16,5 +16,11 @@ namespace DashBoaard.Views
         {
             InitializeComponent();
         }
+
+        private void Save()
+        {
+            Preferences.Set(PrefPhone, txtPhone.Text);
+            Preferences.Set(PrefMsg, txtMsg.Text);
+        }
     }
 }
