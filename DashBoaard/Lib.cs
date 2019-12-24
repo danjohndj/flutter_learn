@@ -7,7 +7,8 @@ namespace DashBoaard
     class Lib
     {
         public const String OK = "OK";
-        public const String Error = "Error";    
+        public const String Error = "Error";
+        public const String Blank = "";
 
     }
 }

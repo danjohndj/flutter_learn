@@ -38,7 +38,7 @@
             <ShellContent ContentTemplate="{DataTemplate local:Communication}" />
         </Tab>
         <Tab Title="Network" Icon="outline_my_location_black_24.png">
-            <ShellContent ContentTemplate="{DataTemplate local:AboutPage}" />
+            <ShellContent ContentTemplate="{DataTemplate local:Network}" />
         </Tab>
         <Tab Title="Volume" Icon="outline_volume_down_black_24.png">
             <ShellContent ContentTemplate="{DataTemplate local:AboutPage}" />

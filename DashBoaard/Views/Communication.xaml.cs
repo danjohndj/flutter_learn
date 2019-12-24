@@ -23,8 +23,8 @@ namespace DashBoaard.Views
 
         private void Init()
         {
-            txtPhone.Text = Preferences.Get(PrefPhone,"");
-            txtMsg.Text = Preferences.Get(PrefMsg, "");
+            txtPhone.Text = Preferences.Get(PrefPhone,Lib.Blank);
+            txtMsg.Text = Preferences.Get(PrefMsg, Lib.Blank);
             
         }
 
