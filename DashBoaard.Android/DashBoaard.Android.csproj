@@ -15,7 +15,6 @@
     <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
     <MonoAndroidResourcePrefix>Resources</MonoAndroidResourcePrefix>
     <MonoAndroidAssetsPrefix>Assets</MonoAndroidAssetsPrefix>
-    <AndroidUseLatestPlatformSdk>false</AndroidUseLatestPlatformSdk>
     <TargetFrameworkVersion>v9.0</TargetFrameworkVersion>
     <AndroidEnableSGenConcurrent>true</AndroidEnableSGenConcurrent>
     <AndroidUseAapt2>true</AndroidUseAapt2>
@@ -91,7 +90,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\DashBoaard\DashBoaard.csproj">
-      <Project>{CC3DA1E7-1E80-4B65-8E1C-BC62070E0E23}</Project>
+      <Project>{56AFDAEF-FD4B-4E5B-B5DB-B6BC97A1EBBF}</Project>
       <Name>DashBoaard</Name>
     </ProjectReference>
   </ItemGroup>
