@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_comm"
+        android:icon="@drawable/ab_communication"
+        android:title="@string/communication"/>
+
+    <item
+        android:id="@+id/navigation_network"
+        android:icon="@drawable/ab_network"
+        android:title="@string/network"/>
+
+    <item
+        android:id="@+id/navigation_volume"
+        android:icon="@drawable/ab_volume"
+        android:title="@string/volume"/>
+    <item
+        android:id="@+id/navigation_apps"
+        android:icon="@drawable/ab_apps"
+        android:title="@string/apps"/>
+    <item
+        android:id="@+id/navigation_settings"
+        android:icon="@drawable/ab_settings"
+        android:title="@string/settings"/>
+
+    <item
+        android:id="@+id/navigation_blank"
+        android:icon="@drawable/ab_blank"
+        android:title="@string/blank"/>
+
+</menu>
