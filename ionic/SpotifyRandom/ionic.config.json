@@ -1,0 +1,7 @@
+{
+  "name": "SpotifyRandom",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
